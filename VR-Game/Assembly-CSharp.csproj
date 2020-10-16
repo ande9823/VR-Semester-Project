@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,11 +52,19 @@
     <UnityVersion>2020.1.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
-    <Compile Include="Assets\Scripts\DoorOpeningScript.cs" />
-    <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DoorOpeningScript.cs" />
+    <Compile Include="Assets\Scripts\RobotMovement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\Robots\Robo3\Animations\Robo3 animations list.txt" />
+     <None Include="Assets\Robots\Robo2\Animations\Robo2 animations list.txt" />
+     <None Include="Assets\Readme.txt" />
+     <None Include="Assets\Robots\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Robots\Robo1\Animations\Robo1 animations list.txt" />
+     <None Include="Assets\Robots\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\_Barking_Dog\Readme_Please.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
